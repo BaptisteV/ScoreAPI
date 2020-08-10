@@ -1,0 +1,24 @@
+[package]
+name = "hello_world" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["Alice <a@example.com>", "Bob <b@example.com>"]
+
+[dependencies]
+rocket = "0.4.5"
+chrono = "*"
+serde = { version = "1.0.92", features = ["derive"]}
+serde_json = "1.0.40"
+rand = "*"
+diesel = { version = "*", features = ["postgres"] }
+r2d2 = "*"
+r2d2-diesel = "*"
+dotenv = "0.9.0"
+
+[dependencies.uuid]
+version = "*"
+features = ["v4"]
+
+[dependencies.rocket_contrib]
+version = "0.4.1"
+default-features = false
+features = ["json"]
